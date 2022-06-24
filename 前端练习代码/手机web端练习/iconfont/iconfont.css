@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3450770 */
+  src: url('iconfont.woff2?t=1654467068638') format('woff2'),
+       url('iconfont.woff?t=1654467068638') format('woff'),
+       url('iconfont.ttf?t=1654467068638') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-convention_2:before {
+  content: "\e629";
+}
+
+.icon-a-bedefeated_1:before {
+  content: "\e62a";
+}
+
+.icon-a-bedefeated_2:before {
+  content: "\e62b";
+}
+
+.icon-a-Materialdemandplan:before {
+  content: "\e62c";
+}
+
+.icon-a-projectmanagement:before {
+  content: "\e62d";
+}
+
+.icon-a-productionorder:before {
+  content: "\e62e";
+}
+
+.icon-a-Weekworklist:before {
+  content: "\e62f";
+}
+
+.icon-a-productivetask:before {
+  content: "\e630";
+}
+
+.icon-a-Productiontaskschedule:before {
+  content: "\e631";
+}
+
+.icon-a-reworkworkorder:before {
+  content: "\e632";
+}
+
+.icon-a-Syncfailurerecord:before {
+  content: "\e633";
+}
+
+.icon-a-BasicSettings:before {
+  content: "\e634";
+}
+
+.icon-a-Taskpreparation:before {
+  content: "\e635";
+}
+
+.icon-a-Productiontaskswitching:before {
+  content: "\e636";
+}
+
+.icon-a-Productionlog:before {
+  content: "\e637";
+}
+
+.icon-a-Completionrecord:before {
+  content: "\e638";
+}
+
+.icon-a-Productionprocessinspection:before {
+  content: "\e639";
+}
+
+.icon-a-Productionanomaly:before {
+  content: "\e63a";
+}
+
+.icon-a-Quantityandpointinspection:before {
+  content: "\e63b";
+}
+
+.icon-a-Saleswarehousemanagement:before {
+  content: "\e63c";
+}
+
+.icon-a-Materialinventory:before {
+  content: "\e63d";
+}
+
+.icon-a-Workshopwarehousebasicdata:before {
+  content: "\e63e";
+}
+
+.icon-a-Inventoryofcirculationproducts:before {
+  content: "\e63f";
+}
+
+.icon-a-Qualityinspectiontask:before {
+  content: "\e601";
+}
+
+.icon-a-customercomplaint:before {
+  content: "\e602";
+}
+
+.icon-SPC:before {
+  content: "\e603";
+}
+
+.icon-a-Tocontainthesingle:before {
+  content: "\e604";
+}
+
+.icon-a-Deviationfromthesingle:before {
+  content: "\e605";
+}
+
+.icon-a-inspectingitem:before {
+  content: "\e606";
+}
+
+.icon-a-Warningsheet:before {
+  content: "\e607";
+}
+
+.icon-frock:before {
+  content: "\e608";
+}
+
+.icon-a-database:before {
+  content: "\e609";
+}
+
+.icon-a-processcontrol:before {
+  content: "\e60a";
+}
+
+.icon-equipment:before {
+  content: "\e60b";
+}
+
+.icon-logistics:before {
+  content: "\e60c";
+}
+
+.icon-a-Isolatedproducts:before {
+  content: "\e60d";
+}
+
+.icon-a-Producttraceability:before {
+  content: "\e60e";
+}
+
+.icon-a-Laboratorytesting:before {
+  content: "\e60f";
+}
+
+.icon-a-productiveprocess:before {
+  content: "\e610";
+}
+
+.icon-a-programofproduction:before {
+  content: "\e611";
+}
+
+.icon-a-qualitycontrol:before {
+  content: "\e612";
+}
+
+.icon-home:before {
+  content: "\e613";
+}
+
+.icon-a-towardstheright:before {
+  content: "\e614";
+}
+
+.icon-downward:before {
+  content: "\e615";
+}
+
+.icon-region:before {
+  content: "\e616";
+}
+
+.icon-upward:before {
+  content: "\e617";
+}
+
+.icon-aleft:before {
+  content: "\e618";
+}
+
+.icon-download:before {
+  content: "\e619";
+}
+
+.icon-leading-in:before {
+  content: "\e61a";
+}
+
+.icon-a-Factoryoverview:before {
+  content: "\e61b";
+}
+
+.icon-a-Calendarshift:before {
+  content: "\e61c";
+}
+
+.icon-a-Productassembly:before {
+  content: "\e61d";
+}
+
+.icon-a-Productioncapacityplanning:before {
+  content: "\e61e";
+}
+
+.icon-a-Personnelsituation:before {
+  content: "\e61f";
+}
+
+.icon-a-Customersuppliermanagement:before {
+  content: "\e620";
+}
+
+.icon-a-Earlywarningmanagement:before {
+  content: "\e621";
+}
+
+.icon-instructor:before {
+  content: "\e622";
+}
+
+.icon-a-Equipmentuserecord:before {
+  content: "\e623";
+}
+
+.icon-a-Standardprocesslibrary:before {
+  content: "\e624";
+}
+
+.icon-routing:before {
+  content: "\e625";
+}
+
+.icon-a-Commissioningrecord:before {
+  content: "\e626";
+}
+
+.icon-close:before {
+  content: "\e627";
+}
+
+.icon-convention_1:before {
+  content: "\e628";
+}
+

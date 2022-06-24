@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+    <style>
+        .d1{
+            padding:10px;
+            background-color: skyblue;
+        }
+        .d2{
+            padding:10px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h2>欢迎来到{{name}}学习</h2>
+        <a href="http://www.baidu.com" @click.prevent="showInfo">点我提示信息</a>
+
+        <div class="father" style="border:1px solid red;"  @click="showInfo1">
+            
+           <input type="button" @click.stop="showInfo1" value="点我" />
+        </div>
+        <input type="button" @click.once="showInfo1" value="点我" />
+
+        <div class="d1" @click="showMsg(1)">div1
+            <div class="d2" @click.stop="showMsg(2)">div2</div>
+        </div>
+
+        <div @click.self="showInfo">
+            <input @click='showInfo' type="button" value="点我">
+        </div>
+        
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+                name:'yzd'
+            },
+            methods:{
+                showInfo(){
+                    alert('同学你好！！！')
+                },
+                showInfo1(){
+                    alert('去点div去')
+                },
+                showMsg(msg){
+                    console.log(msg);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

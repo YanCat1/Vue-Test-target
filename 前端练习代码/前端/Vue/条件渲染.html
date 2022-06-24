@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <input type="button" @click="isShow = !isShow" value="显示/隐藏">
+        <h2 v-show='isShow' >我是{{name}}</h2>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+               name:'yzd',
+               isShow:true
+            },
+            methods:{
+                
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main style="height:100vh;overflow:auto;">
+        <div class="logo flex">
+            <img src="img/logo.png" style="width: 10%;" alt="">
+        </div>
+
+        <div id="box" style="background:white ;">
+            <div id="erweima">
+                <img src="img/erweima.png" alt="">
+            </div>
+            <!-- 登录模式mode -->
+            <div class="mode flex">
+                <div id = 'nom' class="append_bottom ml">免密码登录</div>
+                <div id = 'm' class="ml">密码登录</div>
+            </div>
+    
+            <div id="show">
+                <div class="login flex">
+                    <div class="preFix color" >中国 +86</div>
+                    <svg t="1652686904394" class="icon1" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2139" width="20" height="20"><path d="M481.834667 332.501333a42.666667 42.666667 0 0 1 57.621333-2.496l2.709333 2.496 298.666667 298.666667a42.666667 42.666667 0 0 1-57.621333 62.826667l-2.709334-2.496L512 423.04 243.498667 691.498667a42.666667 42.666667 0 0 1-57.621334 2.496l-2.709333-2.496a42.666667 42.666667 0 0 1-2.496-57.621334l2.496-2.709333 298.666667-298.666667z" p-id="2140"></path></svg>
+                    <svg t="1652686935333" class="icon2" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2944" width="15" height="15"><path d="M63.9 324.3l72.8-72.8L512 626.9l375.3-375.4 72.8 72.8L512 772.5z" fill="#333333" p-id="2945"></path></svg>
+                    <div style="color:#ebebeb">|</div>
+                    <input class='phone color' type="text" placeholder="手机号"/>
+                </div>
+    
+                <div class="number">
+                    
+                </div>
+                
+                <div class='login flex' >
+                    <input class='news color' type="text" placeholder="输入6位短信验证码"/>
+                </div>
+                <div>
+                    <input type="submit" class="logBtn" value="登录"></input>
+                </div>
+            </div>
+    
+            <!-- 密码登录切换界面 -->
+            <div id="show2" class="none">
+               
+                <div class="login flex">
+                    <input class='phone color show2_phone' type="text" placeholder="手机号或邮箱"/>
+                </div>
+    
+                
+                <div class='login flex' >
+                    <input class='news color' type="text" placeholder="密码"/>
+                </div>
+                <div>
+                    <input type="submit" class="logBtn" value="注册/登录"></input>
+                </div>
+            </div>
+    
+            <div  class="phoneLogin">
+                <p>
+                    未注册手机验证后自动登录，注册即代表同意《知乎协议》
+                </p>
+                <a href="#" class='a-font-style'style="line-height: 20px;">《隐私保护指引》</a>
+            </div>
+            <!-- 社交账号登录 -->
+            <div  class="App flex" style="justify-content:space-between;margin-top: 20px;">
+               <p class="a-font-style">社交帐号登录</p>
+               <div class="flex" style="margin-top:4px;">
+                   <a href="">
+                        <div class="wechat">
+                            <img class='img-size' src="img/wechat.png" alt="">
+                            <a style='width:20px;' href="" class='a-font-style'>微信</a>
+                        </div>
+                   </a>
+                    
+                   <a href=""></a>
+                        <div class="qq">
+                            <img class='img-size' src="img/qq.png" alt="">
+                            <a href="" class='a-font-style'>QQ</a>
+                        </div>
+                    </a>
+    
+                    <a href=""></a>
+                        <div class="webo" style="margin-top:-3px;">
+                            <img class='img-size' src="img/webo.png" alt="">
+                            <a href="" class='a-font-style'>微博</a>
+                        </div>
+                    </a>
+               </div>
+            </div>
+        <!-- 机构号、无障碍、下载app -->
+           
+        </div>
+        <div class="download flex" style="justify-content:space-around;align-items: center; margin: 20px auto;;width:375px;height: 58px;background:#f6f6f6">
+            <a href="">
+                <div>
+                    <svg class="icon" width="24" height="24" fill="none" viewBox="0 0 24 24" data-new-api="BadgeCertFill24" data-old-api="BadgeCert" class="Zi Zi--BadgeCert css-1v994a0"><path fill="#0F88EB" d="M2.64 13.39c1.068.894 1.808 2.733 1.66 4.113l.022-.196c-.147 1.384.856 2.4 2.24 2.278l-.198.016c1.387-.122 3.21.655 4.083 1.734l-.125-.154c.876 1.084 2.304 1.092 3.195.027l-.127.152c.894-1.068 2.733-1.808 4.113-1.66l-.198-.022c1.386.147 2.402-.856 2.279-2.238l.017.197c-.122-1.388.655-3.212 1.734-4.084l-.154.125c1.083-.876 1.092-2.304.027-3.195l.152.127c-1.068-.895-1.808-2.732-1.66-4.113l-.022.198c.147-1.386-.856-2.4-2.24-2.279l.198-.017c-1.387.123-3.21-.654-4.083-1.733l.125.153c-.876-1.083-2.304-1.092-3.195-.027l.127-.152c-.895 1.068-2.733 1.808-4.113 1.662l.198.02c-1.386-.147-2.4.857-2.279 2.24L4.4 6.363c.122 1.387-.655 3.21-1.734 4.084l.154-.126c-1.083.878-1.092 2.304-.027 3.195l-.152-.127z" fill-rule="evenodd" clip-rule="evenodd"></path><path fill="#fff" d="M9.78 15.728l-2.633-2.999s-.458-.705.242-1.362c.7-.657 1.328-.219 1.328-.219l1.953 2.132 4.696-4.931s.663-.348 1.299.198c.636.545.27 1.382.27 1.382s-3.466 3.858-5.376 5.782c-.98.93-1.778.017-1.778.017z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <span>开通机构号</span>
+                </div>
+            </a>
+            <a href="">
+                <div style="margin-left: 12px;">
+                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" data-new-api="HeartFill24" data-old-api="Heart" class="Zi Zi--Heart css-1v994a0" fill="currentColor"><path d="M12.004 4.934c1.015-.944 2.484-1.618 3.98-1.618 3.48 0 6.53 3.265 6.15 7.614-.11 1.254-.686 2.55-1.458 3.753-.778 1.215-1.79 2.392-2.845 3.419-1.054 1.028-2.168 1.923-3.161 2.566a9.96 9.96 0 01-1.41.777c-.418.182-.862.32-1.268.32s-.848-.137-1.267-.317a9.918 9.918 0 01-1.407-.771c-.992-.64-2.103-1.53-3.156-2.555-1.052-1.024-2.062-2.2-2.84-3.417-.77-1.208-1.346-2.51-1.456-3.775-.38-4.349 2.67-7.614 6.15-7.614 1.484 0 2.983.673 3.988 1.618z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <span>无障碍</span>
+                </div>
+            </a>
+            <a href=""></a>
+                <div>
+                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20" class="css-1v994a0" fill="none"><path fill="url(#login_bar_logo)" d="M16.131 0H3.87A3.869 3.869 0 000 3.869V16.13A3.869 3.869 0 003.869 20H16.13A3.869 3.869 0 0020 16.131V3.87A3.869 3.869 0 0016.131 0z"></path><path fill="#fff" d="M14.9 10.046V7.391l2.67-.137.232-.015c.147-.26.214-.559.192-.857-.02-.071-.059-.19-.178-.163a9.048 9.048 0 01-1.204.207c-.777.092-1.119.116-2.196.193-1.893.14-3.56.205-3.56.205a.722.722 0 00.75.724c.642-.027 1.582-.071 2.531-.119v2.617h-3.616a.753.753 0 00.753.754h2.843v2.008c0 .255-.13.341-.345.347h-1.1a1.187 1.187 0 00.632.742c.244.081.503.109.76.08.385-.02.836-.237.836-1.014V10.8h3.175a.362.362 0 00.361-.362v-.392H14.9z"></path><path fill="#fff" d="M12.414 8.251a.65.65 0 00-.908-.148l-.107.077 1.187 1.662.635-.457-.807-1.134zm4.147-.057l-.89 1.166.647.472 1.273-1.685-.107-.077a.653.653 0 00-.923.124zM9.737 7.031H6.263v6.065h.858l.112.732 1.154-.732h1.356L9.737 7.03zm-1.465 5.311l-.674.415-.065-.427h-.487V7.785h1.908v4.557h-.682zM5.637 9.761H4.379V7.785h1.436v-.368a.386.386 0 00-.383-.385h-2.24a115.436 115.436 0 01.347-1.018 1.187 1.187 0 00-.68.199.908.908 0 00-.385.551c-.151.416-.296.813-.368 1.05-.136.38-.466 1.048-.466 1.048.248-.002.493-.06.716-.169a1.205 1.205 0 00.575-.822c0-.027 0-.053.024-.086h.65V9.35c0 .142 0 .279-.018.412H2.433a.754.754 0 00-.754.754h1.837a4.955 4.955 0 01-.226 1.035 4.746 4.746 0 01-.845 1.484 9.363 9.363 0 01-.89.845 1.56 1.56 0 001.527-.27 4.21 4.21 0 00.908-1.623c.152-.483.258-.98.318-1.483h1.685v-.38a.362.362 0 00-.356-.362z"></path><path fill="#fff" d="M4.747 11.318l-.658.425 1.418 2.118a1.96 1.96 0 00.19-.629.908.908 0 00-.08-.617l-.87-1.297z"></path><defs><linearGradient id="login_bar_logo" x1="-6.708" x2="25.504" y1="29.91" y2="-8.476" gradientUnits="userSpaceOnUse"><stop offset=".42" stop-color="#06F"></stop><stop offset=".92" stop-color="#00C4FF"></stop></linearGradient></defs></svg>
+                    <span>下载知乎app</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <footer>
+                <p style="margin-bottom:10px;">
+                    知乎专栏 · 圆桌 · 发现 · 移动应用 · 联系我们 · 来知乎工作 · 注册机构号·Investor Relations
+                </p>
+                <p style="margin-bottom:6px;">
+                    © 2022 知乎京 ICP 证 110745 号京 ICP 备 13052560 号 - 1京公网安备 11010802020088 号出版物经营许可证互联网药品信息服务资格证书（京）- 非经营性 - 2017 - 0067
+                </p>
+                <p style="margin-bottom:10px;">
+                    侵权举报网上有害信息举报专区儿童色情信息举报专区违法和不良信息举报:010-82716601举报邮箱:jubao@zhihu.com
+                </p>
+                <img style='width:80px;'src="img/prompt.png" alt="">
+            </footer>
+        </div>
+    </main>
+    
+    
+   
+    <script src="JS/index.js"></script>
+</body>
+</html>

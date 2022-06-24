@@ -1,0 +1,14 @@
+.father {
+  width: 100rem;
+  height: 100rem;
+}
+.father .son {
+  width: 50rem;
+  height: 50rem;
+}
+.father .son:hover {
+  color: red;
+}
+.father:hover {
+  color: green;
+}

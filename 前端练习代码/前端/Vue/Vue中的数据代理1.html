@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="box">
+        <h2>{{name}}</h2>
+        <h2>{{address}}</h2>
+    </div>
+    <script>
+        const vm = new Vue({
+            el:'#box',
+            data:{
+                name:'尚硅谷',
+                address:'苏州'
+            }
+        })
+    </script>
+</body>
+</html>

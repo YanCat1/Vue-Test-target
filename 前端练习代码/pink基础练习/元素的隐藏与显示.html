@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 400px;
+            height:400px;
+            border:1px solid black;
+            margin:0 auto;
+        }
+        .father{
+            width:200px;
+            height:30px;
+            background:pink;
+            margin: auto;
+            opacity: 0.3;
+        }
+        .son{
+            width:100px;
+            height:100px;
+            background:red;
+            display:none;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="father"></div>
+        <div class="son"></div>
+    </div>
+    
+    <script>
+        let father = document.querySelector('.father')
+        let son = document.querySelector('.son')
+        father.onmouseover=function(){
+            son.style = 'display:block'
+        }
+        father.onmouseout=function(){
+            son.style = 'display:none'
+        }
+    </script>
+</body>
+</html>

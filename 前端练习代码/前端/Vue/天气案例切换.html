@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h2>今天天气很{{info}}</h2>
+        <input type="button" value="切换天气" @click="change">
+    </div>
+
+    <script>
+        const vm = new Vue({    
+            el:'#root',
+            data:{
+               name:'yzd',
+               isHot:true
+            },
+            methods:{
+                change(){
+                    this.isHot = !this.isHot
+                }
+            },
+            computed:{
+                info(){
+                    return this.isHot?'凉爽':'炎热'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

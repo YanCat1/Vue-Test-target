@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:600px;
+            height:500px;
+            border:1px solid black;
+            margin:0px auto;
+        }
+        .img1{
+            width:100px;
+            height:100px;
+            animation: LRmove 1s infinite alternate;
+        }
+        .img6{
+            width:100px;
+            height:100px;
+            animation: TBmove 1s infinite alternate;
+        }
+
+        .img2{
+            width:100px;
+            height:100px;
+            margin-left: 20px;
+            animation: TBmove 0.5s  infinite alternate;
+        }
+        .img3{
+            width:100px;
+            height:100px;
+            margin-left: 20px;
+            animation: TBmove 0.5s 0.5s infinite alternate;
+        }
+        .img4{
+            width:100px;
+            height:100px;
+            margin-left: 20px;
+            animation: TBmove 0.5s 0.7s infinite alternate;
+        }
+        
+
+
+        @keyframes LRmove{
+            from{
+                transform:translate(0px,0px)
+            }
+            to{
+                transform:translate(100px,0px)
+            }
+        }
+        @keyframes TBmove{
+            from{
+                transform:translate(0px,0px)
+            }
+            to{
+                transform:translate(0px,100px)
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/haha.jpg" alt="" class="img1">
+        <img src="./image/haha.jpg" alt="" class="img6">
+    </div>
+    <div class="box">
+        <img src="./image/haha.jpg" alt="" class="img2">
+        <img src="./image/haha.jpg" alt="" class="img3">
+        <img src="./image/haha.jpg" alt="" class="img4">
+    </div>
+</body>
+</html>

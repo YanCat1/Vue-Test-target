@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h2>人员列表</h2>
+        <ul >
+            <li v-for='(item,index) in personInfo' :key="index">
+                {{item.name}}-{{item.age}}
+            </li>
+        </ul>
+        <input type="button" value="添加一个老六" @click.once='add'/>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+               name:'yzd',
+               personInfo:[
+                   {id:'001',name:'张三',age:18},
+                   {id:'002',name:'李四',age:19},
+                   {id:'003',name:'王五',age:20},
+                ]
+            },
+            methods:{
+                add(){
+                    let man = {id:'004',name:'老刘',age:'22'}
+                    this.personInfo.unshift(man)
+                }
+            }
+        })
+    </script>
+</body>
+</html>

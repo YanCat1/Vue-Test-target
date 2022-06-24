@@ -1,0 +1,14 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open 初始Vue.html",
+            "file": "c:\\Users\\Administrator\\Desktop\\前端学习\\前端练习代码\\2022.6.23日VUE学习\\VUE开练\\练习内容\\初始Vue.html"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div style="height:100vh;width:100%;overflow:auto">
+        <header class="top">
+
+        </header>
+        <div id="box" class="flex" style="height:200vh;">
+            <!-- left -->
+            <div class="flex1">
+                <div style="height:100px;">
+                <h2 style="text-align: center;line-height: 226%;">I LIKE GAME</h2>
+            </div>
+                <div></div>
+            </div>
+            <!-- center -->
+            <div class="flex2" style="overflow: auto;">
+                <div class="flex fishBox" style="height:120px;justify-content: center;align-items: center;"> 
+                    <img class="fish" src="image/fish.jpg" alt="">
+                </div>
+                <div class="text flex column">
+                    <div class="text-img flex1">
+                       <img src="image/apex.jpg" alt="">
+                    </div>
+                    <div class="text-img flex1">
+                        <img src="image/csgo.jpg" alt="">
+                    </div>
+                    <div class="text-img flex1">
+                        <img src="image/kill.jpg" alt="">
+                    </div>
+                    <div class="text-img flex1">
+                        <img src="image/red.jpg" alt="">
+                    </div>
+                    <div class="text-img flex1">
+                        <img src="image/yxlm.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="flex1" style="text-align:center;">
+                <div style="height:60px;">
+                <h2 class="date"></h2>
+                <h2 class="time"></h2>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        
+        let date =  document.querySelector('.date')
+        let time =  document.querySelector('.time')
+        
+        function isE(str){
+            str<10?str='0'+str:''
+            return str
+        }
+        function getTime(){
+            let now = new Date()
+            let year = now.getFullYear()
+            let month = now.getMonth()+1
+            let day = now.getDate()
+            let h = now.getHours()
+            let m = now.getMinutes()
+            let s = now.getSeconds()
+            date.innerText = year+'.'+month+'.'+day
+            time.innerText = isE(h)+':'+isE(m)+':'+isE(s)
+        }
+        
+        getTime()
+        setInterval(function(){
+            getTime()
+        },1000)
+        
+        
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        姓:<input id='forst-name'type="text" v-model:value=firstName >
+        <br>
+        <br>
+        名:<input id="last-name" type="text" v-model:value=lastName>
+        
+        <h2>全名: {{fullName}} </h2>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+               name:'yzd',
+               firstName:'',
+               lastName:''
+            },
+            computed:{
+                // 完整的写法
+                // fullName:{
+                //     get(){
+                //         return this.firstName +'-'+this.lastName
+                //     },
+                //     set(value){
+                //         let arr = value.split('-')
+                //         this.firstName = arr[0]
+                //         this.lastName = arr[1]
+                //     }
+                // }
+                // 简写形式 当确定这个属性只读取而不修改时，可以使用简写形式
+                // 实际上 fullName还是一个属性，函数形式为get被缩写了
+                fullName(){
+                    return this.firstName +'-'+this.lastName
+                }
+            }
+        })
+    </script>
+</body>
+</html>

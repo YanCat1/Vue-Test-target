@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:600px;
+            height:200px;
+            border:1px solid black;
+            margin:20px auto;
+            display: flex;
+            overflow: hidden;
+            
+        }
+        .box img{
+            width:600px;
+            height:200px;
+            animation: move 2s infinite;
+        }
+        @keyframes move{
+            from{
+                transform: translate(0px,0px);
+            }
+            to{
+                transform: translate(-230px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/haha.jpg" alt="">
+        <img src="./image/line.png" alt="">
+        <img src="./image/haha.jpg" alt="">
+        <img src="./image/动物.jpg" alt="">
+    </div>
+</body>
+</html>

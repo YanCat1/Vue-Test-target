@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <input type="text" placeholder="输入姓名" v-model:value="keyWord">
+        <ul>
+            <li v-for="(item,index) in newNames" :key="item.id">
+                {{item.name}} - {{item.age}} - {{item.sex}}
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+               name:'yzd',
+               names:[
+                   {id:'001',name:'马冬梅',age:19,sex:'女'},
+                   {id:'002',name:'周冬雨',age:20,sex:'女'},
+                   {id:'003',name:'周杰伦',age:21,sex:'男'},
+                   {id:'004',name:'温兆伦',age:22,sex:'男'}],
+                newNames:[],
+                keyWord:''
+            },
+            watch:{
+                keyWord:{
+                    immediate:true,
+                    handler(newValue){
+                        this.newNames = this.names.filter((p)=>{
+                                return p.name.indexOf(newValue) != -1
+                        })
+                        console.log(this.names);
+                    }
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>

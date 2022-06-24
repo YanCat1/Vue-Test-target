@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6078867",
+      "name": "京东-01",
+      "font_class": "jingdong-",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "6460179",
+      "name": "京东智投",
+      "font_class": "jingdongzhitou",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6460239",
+      "name": "京东到家",
+      "font_class": "jingdongdaojia",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "6460249",
+      "name": "京东出众",
+      "font_class": "jingdongchuzhong",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "11560179",
+      "name": "京东",
+      "font_class": "jingdong",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}

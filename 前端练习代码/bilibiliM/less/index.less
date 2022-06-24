@@ -1,0 +1,75 @@
+@import './base.less';
+@vw: 3.75vw;
+@flex:display:flex;
+
+header{
+    width:100vw;
+    height:(84 / @vw);
+    position: fixed;
+    left:0;
+    top:0;
+    
+    .logo{
+        height:(44 / @vw);
+        padding-left:(18/@vw);
+        padding-right:(12/@vw);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            .Navbar_logo{
+                color: #fb7299;
+                font-size: 7.46667vw;
+            }
+            
+        }
+        .right{
+            width:(160 / @vw);
+            height:(44 / @vw);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .ic_search_tab{
+                color:#ccc;
+            }
+            .login{
+                width:(24 / @vw);
+                height:(24 / @vw);
+            }
+            .btn{
+                width:(72 / @vw);
+                height:(24 / @vw);
+                
+            }
+        }
+    }
+    .nav{
+        height:(40 / 3.75vw);
+        // background: blue; 
+        padding-left:(18/@vw);
+        padding-right:(12/@vw);
+        border-bottom:1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .tob{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align:center;
+        a{
+            width:(60 / @vw);
+            height:(40 / @vw);
+            line-height: (40 / @vw);;
+            span{
+                font-size:(14 / @vw);
+            }
+        }
+    }
+    .more{
+        .general_pulldown_s{
+            color:#aaa;
+        }
+    }
+}

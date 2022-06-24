@@ -1,0 +1,160 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    height:170px;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: url('../img/bg.png') no-repeat;
+    background-color: #b8e5f8;
+    background-size: cover;
+}
+.block{
+    display:block;
+}
+.none{
+    display:none;
+}
+
+.mode{
+    height:28px;
+}
+input{
+    outline: none;;
+}
+.ml{
+    margin-left:16px;
+    cursor: pointer;
+}
+#box{
+    width: 335px;
+    height: 365px;
+    margin: -22px auto;
+    padding: 20px;
+    position: relative;
+}
+.color{
+    color:#8993a9;
+}
+.flex{
+    display: flex;
+}
+.login{
+    align-items: center;
+    height:53px;
+    margin-top:13px;
+    border-bottom: 1px solid #ebebeb;
+}
+.news{
+    height:30px;
+    width:100%;
+    border:none;
+    padding-left: 20px;
+}
+.phone{
+    padding-left:10px;
+    height:30px;
+    width:50%;
+    font-size:14px;
+    border: 0px;
+}
+.preFix{
+    padding-left: 15px;
+    line-height: 30px;
+    width: 112px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.icon1{
+    position: absolute;
+    top: 73px;
+    left: 117px;
+}
+.icon2{
+    position: absolute;
+    top: 87px;
+    left: 120px;
+}
+.logBtn{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    background: #06f;
+    border:1px solid #06f;
+    color: white;
+    margin-top: 33px;
+    cursor: pointer;
+}
+.logBtn:hover{
+    background:#005ce6;
+    border:1px solid #005ce6;
+}
+
+.append_bottom{
+    font-weight:bold;
+    border-bottom:3px solid #1371ff;
+}
+.show2_phone{
+    padding-left:20px;
+}
+.phoneLogin{
+    height: 45px;;
+    border-bottom: 1px solid #ebebeb;
+    font-size:10px;
+    color:#838383;
+    margin-top:35px;
+}
+.a-font-style{
+    color:#838383;
+}
+.img-size {
+    width: 20px;
+    vertical-align:middle;
+}
+
+.wechat,.qq,.webo{
+    margin-left:20px;
+}
+.wechat,.qq,.webo a{
+    font-size:10px;
+}
+.icon{
+    vertical-align:middle;
+}
+span{
+    color:#2e81fd;
+    font-size:15px;
+
+}
+footer{
+    width:940px;
+    height:300px;
+    margin: 0px auto;
+    flex-direction: column;
+    font-size:10px;
+    text-align:center;
+    color: white;
+    margin-top: 42px;
+}
+#erweima{
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+    position: absolute;
+    right:0px;
+    top: 0px;
+    cursor: pointer;
+}
+#erweima img{
+    width: 50px;
+    height: 50px;
+}
+

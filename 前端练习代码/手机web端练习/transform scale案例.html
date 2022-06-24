@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:400px;
+            height:380px;
+            background: url(./image/haha.jpg);
+            margin:0px auto;
+            background-position: center;
+            transition:0.5s;
+        }
+        div img{
+            width:100px;
+            height:100px;
+            transform-origin: center center;
+            transform:translate(150%,150%) scale(3);
+            transition:0.5s;
+            opacity: 0;
+        }
+
+        div:hover img{
+            opacity: 1;
+            transform:translate(150%,150%) scale(1);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./image/动物.jpg" alt="">
+    </div>
+</body>
+</html>

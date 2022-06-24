@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width:400px;
+            height:30px;
+            display: flex;
+            margin: 20px auto;
+        }
+        .content{
+            flex:1;
+            line-height:30px;
+            text-align: center;
+            background: skyblue;
+            color: white;
+            margin-left:10px;position:absolute
+        }
+        .bg{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="content">新闻1</div>
+        <div class="content">新闻2</div>
+        <div class="content">新闻3</div>
+        <div class="content">新闻4</div>
+        <div class="content">新闻5</div>
+    </div>
+    <script>
+        content = document.querySelectorAll('.content')
+        for(i=0;i<content.length;i++){
+            content[i].onclick=function(){
+                for(j=0;j<content.length;j++){
+                    content[j].className = 'content'
+                }
+                this.className = 'content bg'
+            }
+        }
+    </script>
+</body>
+</html>

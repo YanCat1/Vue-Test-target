@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            margin:20px auto;
+            background: pink;
+            /* animation: changColor 2s; */
+            animation: change 5s ;
+        }
+        /* 
+        只有开始和结束时 我们使用from-to属性
+        @keyframes changColor{
+            from{
+                width:200px;
+            }
+            to{
+                width:600px;
+            }
+        } */
+
+        /* 当我们想要定义多个改变的值时 使用 进度% 去写 */
+        @keyframes change{
+            0%{
+                width:200px;
+            }
+            20%{
+                width:400px;
+                height:400px;
+            }
+            40%{
+                width:500px;
+                height:600px;
+            }
+            70%{
+                width:100px;
+                height:100px;
+            }
+            100%{
+                width:600px;
+                height:600px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

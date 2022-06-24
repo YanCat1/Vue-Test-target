@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function love() {
+        Q = prompt("你喜欢我吗？(喜欢请输入1,不喜欢请输入2)");
+        switch (Q) {
+            case "1":
+                alert("太好了，我也喜欢你！");
+                break;
+            case "2":
+                love();
+            default:
+                alert("除了爱我,你别无选择！！！");
+                love();
+            }
+        }
+        love();
+       </script>
+</body>
+</html>

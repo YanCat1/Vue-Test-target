@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <input type="text" placeholder="输入姓名" v-model:value="keyWord">
+        <input type="button" value="年龄升序排列" @click="sortType=2">
+        <input type="button" value="年龄降序排列" @click="sortType=1">
+        <input type="button" value="还原列表" @click="sortType=0">
+        <ul>
+            <li v-for="(item,index) in newNames" :key="item.id">
+                {{item.name}} - {{item.age}} - {{item.sex}}
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+               name:'yzd',
+               names:[
+                   {id:'001',name:'马冬梅',age:21,sex:'女'},
+                   {id:'002',name:'周冬雨',age:20,sex:'女'},
+                   {id:'003',name:'周杰伦',age:19,sex:'男'},
+                   {id:'004',name:'温兆伦',age:22,sex:'男'}],
+                keyWord:'',
+                sortType:''
+            },
+            computed:{
+                newNames(){
+                    let arr = this.names.filter((p)=>{
+                        return p.name.indexOf(this.keyWord) !== -1
+                    })
+                    if(this.sortType){
+                        arr.sort((p1,p2)=>{
+                            return this.sortType === 1?p2.age-p1.age:p1.age-p2.age
+                        })
+                    }
+                    return arr
+                }
+            },
+            methods: {
+               
+            },
+        })
+    </script>
+</body>
+</html>

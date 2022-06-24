@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue/vue.js"></script>
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div id="root">
+        <input  @click="n++" type="button" value="点我n+1">
+        <h2>当前n的值:{{n}}</h2>
+        <div class="div" v-if="n==1">y</div>
+        <div class="div" v-else-if="n==1">z</div>
+        <div class="div" v-else-if="n==3">d</div>
+
+        <template v-if="n==1">
+            <h2>yzd</h2>
+            <h2>yzd</h2>
+            <h2>yzd</h2>
+        </template>
+        
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:'#root',
+            data:{
+               name:'yzd',
+               n:0
+            }
+        })
+    </script>
+</body>
+</html>

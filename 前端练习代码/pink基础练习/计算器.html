@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width:568px;
+            height:393px;
+            border:1px solid black;
+            margin:0 auto;
+            display: flex;
+        }   
+        .left,.right{
+            flex:1;
+            border:1px solid black;
+        }
+        .right{
+            text-align: center;
+            font-size:20px;
+        }
+        .one,.tow{
+            width:216px;
+            height:25px;
+        }
+        .btns button{
+            width:40px;
+            height:40px;
+            font-size:32px;
+            margin:20px 0px 0px 10px;
+        }
+        button:nth-last-child(2){
+            line-height: 50px;
+            vertical-align: top;
+        }
+        .reset{
+            width: 60px;
+            height: 30px;
+            margin: 20px -160px 0px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <!-- 左侧布局 -->
+        <div class="left">
+            <h2 class="result" style="text-align: center;line-height:100px"></h2>
+        </div>
+
+        <div class="right">
+            <!-- 右侧布局 -->
+            <h2>计算器</h2>
+            <label>
+                <div>请输入第一个数字:</div>
+                <input class="one" type="text" maxlength="3">
+            </label>
+            <label>
+                <div  style="margin-top: 50px;">请输入第二个数字:</div>
+                <input class="tow" type="text" maxlength="3" >
+            </label>
+
+            <!-- 按钮 -->
+            <div class="btns">
+                <button class="btn" name="1">+</button>
+                <button class="btn" name="2">-</button>
+                <button class="btn" name="3">*</button>
+                <button class="btn" name="4">/</button>
+            </div>
+            <input class='reset' type="button" value="重置" />
+        </div>
+    </div>
+
+    <script>
+        var one = document.querySelector('.one')
+        var tow = document.querySelector('.tow')
+        var btn = document.querySelectorAll('.btn')
+        var result = document.querySelector('.result')
+        var reset = document.querySelector('.reset')
+
+        for(i=0;i<btn.length;i++){
+            btn[i].onclick=function(){
+                if(this.name == 1){
+                    c = add(parseInt(one.value),parseInt(tow.value))
+                    result.innerText = one.value+'+'+tow.value+'='+c
+                }
+                else if(this.name == 2){
+                    c = sub(parseInt(one.value),parseInt(tow.value))
+                    result.innerText = one.value+'-'+tow.value+'='+c
+                }
+                else if(this.name == 3){
+                    c = mul(parseInt(one.value),parseInt(tow.value))
+                    result.innerText = one.value+'*'+tow.value+'='+c
+                }
+                else if(this.name == 4){
+                    c = dvs(parseInt(one.value),parseInt(tow.value))
+                    result.innerText = one.value+'/'+tow.value+'='+c
+                }
+            }
+        }
+
+        reset.onclick=function(){
+            one.value = '' 
+            tow.value = ''
+            result.innerText = ''
+        }
+        
+        function add(a,b){
+            return a+b
+        }
+        function sub(a,b){
+            return a-b
+        }
+        function mul(a,b){
+            return a*b
+        }
+        function dvs(a,b){
+            return a/b
+        }
+        
+    </script>
+</body>
+</html>
