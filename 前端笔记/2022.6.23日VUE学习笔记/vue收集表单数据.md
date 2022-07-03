@@ -180,3 +180,46 @@ const vm = new Vue({
 </form>
 ```
 
+```
+<input type='number' />	设置内容只能输入数字
+```
+
+v-model 的修饰符注意 是 v-model的所以只能给v-model 加
+
+```
+输入内容转为数字
+<input type='text' v-model.number='value' />	
+
+将输入内容的首位空格去掉
+<input type='text' v-model.trim='value' />
+
+内容懒加载，当添加 lazy的元素 失去焦点时，才添加内容 否则不添加
+<input type='text' v-model.lazy='value' />
+
+```
+
+```
+<div>
+    <br>
+    只能输入数字
+    <input type="number" v-model='number' value="">
+    <br><br>
+    去掉首位空格 但中间的空格无法去掉
+    <input type="text" v-model.trim="space" value="">
+    <br><br>
+    失去焦点时 将数据提交，不用每次都看，懒加载
+    <input type="text" v-model.lazy="out" value="">
+</div>
+
+const vm = new Vue({
+    el:'#app',
+    data(){
+        return {
+            number:'',
+            space:'',
+            out:''
+        }
+    }
+})
+```
+
